@@ -129,10 +129,49 @@ button, input, textarea {
   border-radius: 0; }
 
 .section-slider {
-  height: 100vh;
-  position: relative; }
-  .section-slider .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  margin-top: 70px; }
+
+.carousel-caption {
+  top: 50%;
+  transform: translate(0, -38%);
+  width: 100%;
+  left: 0; }
+
+.carousel-caption h1 {
+  font-size: 70px;
+  margin-bottom: 24px;
+  text-transform: uppercase; }
+  .carousel-caption h1 span {
+    color: #fff200; }
+
+.carousel-caption p {
+  max-width: 730px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 auto; }
+
+.carousel-control {
+  bottom: inherit;
+  top: 50%;
+  margin-top: -25px;
+  height: 60px;
+  width: 60px;
+  background: rgba(255, 255, 255, 0.6) !important;
+  box-shadow: none;
+  color: #fff !important; }
+  .carousel-control i {
+    margin-top: 18px;
+    display: block;
+    color: #fff; }
+
+.left.carousel-control {
+  left: 20px; }
+
+.right.carousel-control {
+  right: 20px; }
+
+.carousel-control:focus, .carousel-control:hover {
+  opacity: none; }
+
+.section-page {
+  padding: 100px 0; }

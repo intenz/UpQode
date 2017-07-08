@@ -1,5 +1,6 @@
 $fontfamily:'Lato';
 $yellow: #fff200;
+$blue: #009dda;
 
 body{font-family:$fontfamily,sans-serif;font-weight:400;color: #fff;font-size: 14px;color: #999;}
 a{text-decoration:none;color:inherit;outline:0!important}
@@ -143,12 +144,57 @@ button,input,textarea{outline: none;}
 }
 
 .section-slider {
-  height: 100vh;
-  position: relative;
-  .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  margin-top: 70px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translate(0,-38%);
+  width: 100%;
+  left: 0;
+}
+.carousel-caption h1 {
+  font-size: 70px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  span {
+    color: $yellow;
   }
+
+}
+.carousel-caption p {
+  max-width: 730px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.carousel-control {
+  bottom: inherit;
+  top: 50%;
+  margin-top: -25px;
+  height: 60px;
+  width: 60px;
+  background: rgba(255,255,255,.6) !important;
+  box-shadow: none;
+  color: #fff !important;
+  i {
+    margin-top: 18px;
+    display: block;
+    color: #fff;
+  }
+}
+.left.carousel-control {
+  left: 20px;
+}
+.right.carousel-control {
+  right: 20px;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+  opacity: none;
+}
+
+.section-page {
+  padding: 100px 0;
 }
