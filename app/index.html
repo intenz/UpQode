@@ -5,18 +5,77 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="maket"></div>
+    <!-- <div id="maket"></div> -->
     <div class="wrap">
-        <div class="container">
-            <div class="row">
-                <h1>lato text</h1>
+         <!-- nav start -->
+        <div class="navbar navbar-default navbar-fixed-top navbar_page" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><form class="form_header" action=""><input type="text"> <button type="submit"><i class="fa fa-search"></i></button></form></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar_right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                             <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Name Surname</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa Chris</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Name Surname</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nelson Noa</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!-- nav end -->
+        <!-- slider start -->
+        <section class="section-slider">
+            <div class="slider">
+                <div class="slide">
+                    <div class="container">
+                        <div class="text-center">
+                            <h1>Creative <span>Design Agency</span></h1>
+                            <p class="">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider and -->
     </div>
     <script src="js/main.js"></script>
+    <script src='bower/jquery/dist/jquery.min.js'></script>
     <script src='bower/bootstrap/dist/js/bootstrap.min.js'></script>
 </body>
 </html>
