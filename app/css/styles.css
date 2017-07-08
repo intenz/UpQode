@@ -131,6 +131,9 @@ button, input, textarea {
 .section-slider {
   margin-top: 70px; }
 
+.slide {
+  position: relative; }
+
 .carousel-caption {
   top: 50%;
   transform: translate(0, -38%);
@@ -245,6 +248,57 @@ button, input, textarea {
   color: #232323;
   font-size: 35px;
   line-height: 1;
+  text-transform: uppercase;
   font-weight: bold; }
   .title-section span {
     color: #009dda; }
+
+.section-product {
+  background: url(../img/bg-product.jpg) no-repeat center;
+  padding-top: 0; }
+  .section-product .title-section {
+    text-align: center;
+    height: 160px;
+    line-height: 120px;
+    color: #fff;
+    margin-bottom: 95px;
+    background: url(../img/bg-title.png) no-repeat center; }
+    .section-product .title-section span {
+      color: #fff200; }
+
+.product-item {
+  margin-bottom: 105px; }
+  .product-item .wrap-img {
+    float: left;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25px; }
+  .product-item h3 {
+    font-size: 24px;
+    color: #232323;
+    padding: 16px 0 0px;
+    text-transform: uppercase;
+    margin-bottom: 6px; }
+  .product-item a {
+    display: block;
+    color: #503392;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 13px; }
+
+.section-product .carousel-indicators {
+  bottom: -30px; }
+  .section-product .carousel-indicators li {
+    background: #d7d7d7;
+    vertical-align: top;
+    border: none;
+    cursor: auto;
+    height: 7px;
+    width: 7px; }
+    .section-product .carousel-indicators li.active {
+      background: #503392;
+      width: 7px;
+      height: 7px;
+      margin: 1px; }
