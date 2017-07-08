@@ -1,6 +1,7 @@
 $fontfamily:'Lato';
 $yellow: #fff200;
 $blue: #009dda;
+$black: #232323;
 
 body{font-family:$fontfamily,sans-serif;font-weight:400;color: #fff;font-size: 14px;color: #999;}
 a{text-decoration:none;color:inherit;outline:0!important}
@@ -66,18 +67,18 @@ button,input,textarea{outline: none;}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background: transparent;
-  color: #232323;
+  color: $black;
   font-weight: bold;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background: transparent;
-  color: #232323;
+  color: $black;
 }
 
 .navbar-default .navbar-nav>li>a {
   font-size: 16px;
-  color: #232323;
+  color: $black;
 }
 
 .nav>li>a {
@@ -197,4 +198,95 @@ button,input,textarea{outline: none;}
 
 .section-page {
   padding: 100px 0;
+}
+
+.section-about {
+  text-align: center;
+  .title-section {
+    margin-bottom: 30px;
+  }
+  .list-about {
+    margin-top: 77px;
+  }
+  .col-md-2 {
+    padding: 0 !important;
+    margin: 0 19.5px;
+  }
+  .item {
+    border: 1px solid #ccc;
+    padding: 30px 20px 20px;
+    i {
+      font-size: 60px;
+      line-height: 1;
+      color: #503392;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $black;
+      margin-bottom: 20px;
+      margin-top: 53px;
+    }
+    p {
+      line-height: 20px;
+    }
+    .show-about {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background: #503392;
+      a.more {
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .con {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 7px;
+        border: 1px solid #fff;
+        i {
+          font-size: 14px;
+          color: #fff;
+          line-height: 35px;
+        }
+        &:hover {
+          background: #fff;
+          i {
+            color: #503392;
+          }
+        }
+      }
+    }
+    &:hover .show-about {
+      display: block;
+    }
+  }
+}
+
+.dec-section {
+  line-height: 24px;
+}
+.title-section {
+  color: $black;
+  font-size: 35px;
+  line-height: 1;
+  font-weight: bold;
+  span {
+    color: $blue;
+  }
 }

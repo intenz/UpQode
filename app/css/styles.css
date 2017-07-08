@@ -175,3 +175,76 @@ button, input, textarea {
 
 .section-page {
   padding: 100px 0; }
+
+.section-about {
+  text-align: center; }
+  .section-about .title-section {
+    margin-bottom: 30px; }
+  .section-about .list-about {
+    margin-top: 77px; }
+  .section-about .col-md-2 {
+    padding: 0 !important;
+    margin: 0 19.5px; }
+  .section-about .item {
+    border: 1px solid #ccc;
+    padding: 30px 20px 20px; }
+    .section-about .item i {
+      font-size: 60px;
+      line-height: 1;
+      color: #503392; }
+    .section-about .item h3 {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #232323;
+      margin-bottom: 20px;
+      margin-top: 53px; }
+    .section-about .item p {
+      line-height: 20px; }
+    .section-about .item .show-about {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background: #503392; }
+      .section-about .item .show-about a.more {
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold; }
+        .section-about .item .show-about a.more:hover {
+          text-decoration: none; }
+      .section-about .item .show-about .con {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 7px;
+        border: 1px solid #fff; }
+        .section-about .item .show-about .con i {
+          font-size: 14px;
+          color: #fff;
+          line-height: 35px; }
+        .section-about .item .show-about .con:hover {
+          background: #fff; }
+          .section-about .item .show-about .con:hover i {
+            color: #503392; }
+    .section-about .item:hover .show-about {
+      display: block; }
+
+.dec-section {
+  line-height: 24px; }
+
+.title-section {
+  color: #232323;
+  font-size: 35px;
+  line-height: 1;
+  font-weight: bold; }
+  .title-section span {
+    color: #009dda; }
