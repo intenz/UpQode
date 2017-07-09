@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- <div id="maket"></div> -->
     <div class="wrap">
          <!-- nav start -->
@@ -28,7 +29,7 @@
                         <li><form class="form_header" action=""><input type="text"> <button type="submit"><i class="fa fa-search"></i></button></form></li>
                     </ul>
                     <ul class="nav navbar-nav navbar_right">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="#home">Home</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                              <ul class="dropdown-menu">
@@ -49,10 +50,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +61,7 @@
         </div>
         <!-- nav end -->
         <!-- slider start -->
-        <section class="section-slider">
+        <section id="home" class="section-slider">
             <div id="carousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -175,7 +176,7 @@
         </section>
         <!-- section about end-->
         <!-- section our product -->
-        <section class="section-page section-product">
+        <section id="product"  data-vp-offset="[100 OR 10%]" class="section-page section-product">
             <h2 class="title-section">our <span>products</span></h2>
             <div class="container">
                 <div class="row">
@@ -376,9 +377,103 @@
             </div>
         </section>
         <!-- section our product end-->
+        <!-- section aboutus -->
+        <section id="about" class="section-page section-aboutus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="title-section"><span>about</span> us</h2>
+                        <p class="sec-dec">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismNullam at scelerisque tellus mattis volutpat rhoncus, </p>
+                        <p>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam.</p>
+                        <div class="list-skill">
+                            <div class="item-skill">
+                                <p>PHOTOSHOP</p>
+                                <div class="photoshopSkill"></div>
+                            </div>
+                            <div class="item-skill">
+                                <p>HTML/CSS</p>
+                                <div class="htmlCSS"></div>
+                            </div>
+                            <div class="item-skill">
+                                <p>JAVASCRIPT</p>
+                                <div class="JS"></div>
+                            </div>
+                            <div class="item-skill">
+                                <p>WORDPRESS</p>
+                                <div class="Wordprees"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ipad-wrap">
+                            <img src="img/ipad.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section aboutus end -->
+        <!-- section gen in touch -->
+        <section class="section-page section-getin">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-section">get in <span>touch</span></h2>
+                    <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br> Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-page section-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 wrap-contact">
+                        <div class="col-md-8">
+                            <div class="form-contact">
+                                <form action="#">
+                                    <input type="text" placeholder="Full Name">
+                                    <input type="email" placeholder="E-mail Address">
+                                    <textarea placeholder="Message"></textarea>
+                                     <input type="checkbox" class="checkbox" id="checkbox" />
+                                    <label for="checkbox">I like your company</label>
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-dec">
+                                <p>69/A, Some Street Name</p>
+                                <p>Your City, code 01234</p>
+                                <p>Country Name</p>
+                                <br>
+                                <p>+880 123 456 78 98</p>
+                                <p>+860 987 648 74 95</p>
+                                <br>
+                                <p>company@mail.com</p>
+                                <p>sales@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section gen in touch end-->
+        <!-- footer start -->
+        <footer class="footer-page">
+            <p class="copy">Copyright © Company. All Rights Reserved  2016</p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- footer end -->
     </div>
     <script src='bower/jquery/dist/jquery.min.js'></script>
-    <script src="js/main.js"></script>
+    <script src="bower/progressbar.js/dist/progressbar.min.js"></script>
     <script src='bower/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='bower/scrollmagic/scrollmagic/minified/ScrollMagic.min.js'></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
