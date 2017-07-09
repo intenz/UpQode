@@ -1,0 +1,23 @@
+{
+  "name": "site",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Viktor <_intenz_@ukr.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/intenz/UpQode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "progressbar.js": "^1.0.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
